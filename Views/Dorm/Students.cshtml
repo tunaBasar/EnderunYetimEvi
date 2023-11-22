@@ -1,0 +1,45 @@
+﻿@model Student
+<div class="display-6">Students</div>
+
+<form method="post" asp-action="Students">
+    <div class="form-group my-3">
+
+        <label asp-for="TC"></label>
+        <input asp-for="TC" class="form-control" />
+
+    </div>
+    <div class="form-group my-3">
+
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+
+    </div>
+    <div class="form-group my-3">
+
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+
+    </div>
+    <div class="form-group my-3">
+
+        <label asp-for="Age"></label>
+        <select asp-for="Age" class="form-control" >
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+    </div>
+    
+    <div>
+        <button class="btn btn-primary" type="submit">Apply</button>
+        <a class="btn btn-warning" href="/">Home</a>
+    </div>
+</form>
