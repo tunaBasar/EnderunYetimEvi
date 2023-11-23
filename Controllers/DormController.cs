@@ -32,10 +32,21 @@ namespace EnderunYetimEvi.Controllers
         public IActionResult Students(Student model)
         {
             Repository.AddStudent(model);
-            return View("StudentList",model);
+            return View("Studentregistiration", model);
         }
 
+        public IActionResult DonaterList()
+        {
+            var model = Repository.donaters_;
+            return View("DonaterList",model);
+        }
 
+        public IActionResult orphans()
+        {
+            var model = Repository.students_;
+            return View("orphans",model);
+        }
+       
 
 
     }

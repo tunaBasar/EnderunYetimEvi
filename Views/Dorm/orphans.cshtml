@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Student>
+
+
+@if(Model.Count()>0)
+{
+    <h6 class="display-6">
+        Donaters
+    </h6>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>TCKN</th>
+                <th>FullName</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Student student in Model)
+            {
+                <tr>
+                    <td>@student.TC</td>
+                    <td>@student.FullName</td>
+                    <td>@student.Age</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+}
+else
+{
+    <div class="alert alert-info">
+        There is no student here.Please click here to
+        <a class="alert-link" asp-action="Students">register student.</a>
+    </div>
+}
