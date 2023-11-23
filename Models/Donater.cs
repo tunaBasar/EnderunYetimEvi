@@ -7,8 +7,8 @@ namespace EnderunYetimEvi.Models
         public String? Name { get; set; }=String.Empty;
         public String? LastName { get; set; }=String.Empty;
         public String? FullName => $"{Name} {LastName?.ToUpper()}";
-        public int TC { get; set; }
-        public int Price { get; set; }
+        public decimal TC { get; set; }
+        public decimal Price { get; set; }
         public String? SelectedState {  get; set; }=String.Empty;  
         public DateTime ApplyAt { get; set; }
 

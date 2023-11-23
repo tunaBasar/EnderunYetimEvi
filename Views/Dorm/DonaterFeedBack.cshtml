@@ -1,0 +1,19 @@
+﻿@model Donater
+<div>
+    <h3 class="display-3">
+        Thank You @Model.FullName
+    </h3>
+    <p class="lead">
+        Your donation has been received by us,<mark>thank you.</mark>
+    </p>
+    <p class="lead">Many thanks for your interest</p>
+    <hr />
+    <blockquote class="blockquote">
+        You have donated to @Model.SelectedState state
+    </blockquote>
+
+    <div class="btn-group">
+        <a class="btn btn-outline-success" href="#">Other Donaters</a>
+        <a class="btn btn-success" asp-action="Index" asp-controller="Home">Home</a>
+    </div>
+</div>

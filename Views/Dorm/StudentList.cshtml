@@ -1,0 +1,16 @@
+﻿@model Student
+
+<div class="display-3">
+    <h3>A student named @Model.FullName, who has a TCKN number @Model.TC,was received.</h3>
+    <p class="lead">
+        We will do the necessary investigation and get back to you.
+    </p>
+    <p class="lead"><mark>Thank you</mark> for interest</p>
+    <hr />
+
+    <div class="btn-group">
+        <a class="btn btn-outline-dark" asp-action="Index" asp-controller="Students">Registration Page</a>
+        <a class="btn btn-dark" asp-action="Index" asp-controller="Home">Home</a>
+    </div>
+</div>
+
